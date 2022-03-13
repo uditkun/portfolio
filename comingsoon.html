@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Coming Soon...</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        overflow: none;
+        font-family: "Montserrat", sans-serif;
+      }
+      .modal-area {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #3b3d3f;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./assets/random.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 100vh;
+      }
+      .modal {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        font-size: 3rem;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal-area">
+      <div class="modal">
+        More Awesome<br />Websites and Designs<br />Coming soon...
+      </div>
+    </div>
+  </body>
+</html>

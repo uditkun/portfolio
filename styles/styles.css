@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #f1f1f1;
+  background-color: lightgray;
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+canvas {
+  position: absolute;
+  overflow: hidden;
+  z-index: -5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.625rem;
+}
+
+h1,
+h3,
+h4 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  background-color: unset;
+}
+
+.nav #imgChange {
+  display: none;
+}
+
+.nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar a {
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  color: #f1f1f1;
+  border-bottom: 4px solid transparent;
+  -webkit-transition: border-bottom 0.7s ease-out;
+  transition: border-bottom 0.7s ease-out;
+}
+
+.nav .navbar a:hover {
+  border-color: #f1f1f1;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: -1;
+  height: calc(100vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  margin-bottom: 8px;
+}
+
+.hero-content p {
+  font-size: 32px;
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+  background-color: #686868;
+  color: #f1f1f1;
+  padding: 3rem 60px 4.5rem;
+  height: clamp(500px, 500px, 50vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about p {
+  margin: 2rem auto 0;
+  max-width: 75%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.projects {
+  padding: 3.75rem 0 2.5rem;
+  text-align: center;
+  background-color: #3b3d3f;
+}
+
+.projects h3 {
+  margin-bottom: 3rem;
+}
+
+.projects img {
+  width: clamp(300px, 80%, 1000px);
+}
+
+.projects img:first-child {
+  margin-bottom: 8px;
+}
+
+.projects .btn-project {
+  background-color: #3b3d3f;
+  color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.projects .btn-project:hover {
+  background-color: #f1f1f1;
+  color: #3b3d3f;
+  border-color: #3b3d3f;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 60px;
+  background-color: #3b3d3f;
+}
+
+#contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 75%;
+}
+
+#contact .contact-content p {
+  max-width: 100%;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+#contact .contact-content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.25rem;
+}
+
+#contact .contact-content .social a img {
+  max-width: 50px;
+}
+
+footer {
+  background-color: #3b3d3f;
+}
+
+footer p {
+  background-color: #3b3d3f;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (max-width: 800px) {
+  strong {
+    font-weight: 400;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+  }
+  .nav #imgChange {
+    display: block;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .nav .navbar {
+    position: absolute;
+    top: 0px;
+    padding-top: 90px;
+    right: -200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    z-index: -1;
+  }
+  .nav .navbar-active {
+    opacity: 1;
+    right: 0px;
+    z-index: 0;
+  }
+  .hero-content p {
+    font-size: 24px;
+  }
+  #about {
+    height: unset;
+    padding: 2rem 30px 3.5rem;
+  }
+  #about p {
+    max-width: 90%;
+  }
+  .projects {
+    padding: 3.75rem 0 2.5rem;
+  }
+  .projects .btn-project {
+    font-size: 18px;
+    padding: 0.25rem 0.5rem;
+  }
+  #contact {
+    padding: 1rem 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

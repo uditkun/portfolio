@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./assets/Menu2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link type="text/css" rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/canvas.js" defer></script>
+    <title>Udit's Portfolio</title>
+</head>
+<body>
+    <canvas></canvas>
+        <nav class="nav container">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/Menu2.png" alt="logo"></a>
+            </div>
+
+                <img id="imgChange" src="./assets/menubar.png" alt="menu-icon">
+
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            <ul/>
+        </nav>
+
+        <main>
+            <section class="hero-content container">
+                <header>
+                    <h1>Hi, I am Udit</h1>
+                    <p>Frontend Web Developer</p>
+                </header>
+            </section>
+
+            <section id="about">
+                <div class="about-content">
+                    <h3>About Me</h3>
+                    <p>Hi, my name is Udit.
+                        I am currently freelancing for frontend development related projects.<br/>
+                        I am skilled in latest web technologies like HTML5, CSS3, JavaScript ES6+ and also in design softwares like Figma and Photoshop. I also build websites using Wordpress.<br/>
+                        I am currently learning MERN Stack and aspire to become a Full Stack Developer.<br/><br/>
+                    
+                        Feel free to reach out to me for any frontend and web designing related projects and for collaborations. Let's make an awesome digital product together.</p>
+                </div>
+            </section>
+
+            <section id="project" class="projects container">
+                <h3>Websites and Designs</h3>
+                <div class="projects-flex">
+                    <img src="./assets/Chesssite.png" alt="chessgame landing page" title="chess website landing page">
+                    <img src="./assets/Quizapp.png" alt="quizapp landing page" title="Quiz illustration from freepik">
+                </div>
+               <a target="_blank" href="./comingsoon.html">
+                   <button class="btn-project">See More</button>
+               </a> 
+            </section>
+
+            <section id="contact" class="container">
+                <div class="contact-content">
+                    <h4>Contact</h4>
+                    <p>I am based in India, and you can reach out 
+                        to me via this contact form or via links 
+                        given below.<br/>
+                        Thank you for visiting my website.</p>
+                    <div class="social">
+                        <a target="_blank" href="https://www.linkedin.com/in/udit-lilhare-96554a191" title="Linkedin"><img src="./assets/linkedin.png" alt="linkedin"></a>
+                        <a target="_blank" href="https://github.com/uditkun" title="Github"><img src="./assets/github.png" alt="github"></a>
+                        <a target="_blank" href="https://codepen.io/uditkun" title="Codepen"><img src="./assets/codepen.png" alt="codepen"></a>
+                    </div>
+                </div>
+
+                <!-- <form target="_blank" action="https://formsubmit.co/331659b9fed7a45732885329aac0b123" method="POST" class="contact-form"/>
+                        <div class="form-content">
+                            <label for="name"><strong>Name</strong></label>
+                            <input id="name" name="name" type="text" required maxlength="20" placeholder="Your name">
+                        </div>
+                        <div class="form-content">
+                            <label for="email"><strong>Email</strong></label>
+                            <input id="email" name="email" type="email" required maxlength="25" placeholder="Your email">
+                        </div>
+                        <div class="form-content">
+                            <label for="message"><strong>Message</strong></label>
+                            <textarea id="message" name="message" placeholder="Your message" maxlength="500" required></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://uditkun.github.io/portfolio/thankyou.html">
+                        <input type="hidden" name="_subject" value="New Message">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="box">
+                        <button type="submit" class="btn-submit" >Submit</button>
+                    </form> -->
+            </section> 
+        </main>
+        <footer>
+            <p id="copyright">&copy; Copyright 2022 All rights reserved</p>
+        </footer>
+</body>
+</html>
