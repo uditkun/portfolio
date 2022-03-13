@@ -10,7 +10,7 @@ imgChange.addEventListener("click", () => {
   navBar.classList.toggle("navbar-active");
 });
 
-if (innerWidth < 800) {
+if (window.innerWidth < 800) {
   navBar.addEventListener("click", () => {
     navBar.classList.remove("navbar-active");
     imgChange.setAttribute("src", "./assets/menubar.png");
