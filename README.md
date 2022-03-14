@@ -17,4 +17,6 @@ Basic form submission can implemented via [formsubmit](https://formsubmit.co "fo
 
 Visit my [portfolio](https://uditkun.github.io/portfolio "visit portfolio site").
 
+Please disable dark mode or similar extensions for better viewing.
+
 Please note this site is copyright protected.
