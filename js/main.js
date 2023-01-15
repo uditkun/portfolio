@@ -1,5 +1,6 @@
 const imgChange = document.querySelector("#imgChange");
 const navBar = document.querySelector(".navbar");
+const footerDate = document.querySelector(".footerDate");
 // const submitForm = document.querySelector(".contact-form");
 
 imgChange.addEventListener("click", () => {
@@ -16,6 +17,8 @@ if (window.innerWidth < 800) {
     imgChange.setAttribute("src", "./assets/menubar.png");
   });
 }
+
+footerDate.textContent = new Date().getFullYear();
 
 // submitForm.addEventListener("submit", (e) => {
 //   e.preventDefault();
